@@ -2,3 +2,6 @@
 .idea
 __pycache__
 *.pyc
+/todo.txt
+/tests/.pytest_cache/
+/.pytest_cache/
