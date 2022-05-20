@@ -33,7 +33,7 @@ def get_posts_by_user(user_name):
     # вызов ошибки в случае отсутствия пользователя
     if not user_name_posts:
         print("Пользователь не найден")
-        raise ValueError
+        raise ValueError()
     return user_name_posts
 
 
@@ -46,10 +46,6 @@ def get_comments_by_post_id(post_id):
     for comment in get_comments_all():
         if post_id == comment["post_id"]:
             post_comments.append(comment)
-    # вызов ошибки в случае отсуствия поста
-    if not post_comments:
-        print("Пост не найден")
-        raise ValueError()
     return post_comments
 
 
